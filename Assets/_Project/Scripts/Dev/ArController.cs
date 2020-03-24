@@ -70,7 +70,7 @@ namespace GoogleARCore.Examples.HelloAR
         /// </summary>
         private bool m_IsQuitting = false;
 
-        public GameObject ScrollView;
+        public GameObject Panel;
 
         public Button openMenu;
         
@@ -246,13 +246,13 @@ namespace GoogleARCore.Examples.HelloAR
 
         public void OpenMenu()
         {
-            ScrollView.SetActive(true);
+            Panel.SetActive(true);
             openMenu.gameObject.SetActive(false);
         }
         
         public void CloseMenu()
         {
-            ScrollView.SetActive(false);
+            Panel.SetActive(false);
             openMenu.gameObject.SetActive(true);
         }
     }
